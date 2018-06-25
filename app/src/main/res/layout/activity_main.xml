@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="I'm thinking of a number between 1 and 20."
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/guessPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Can you guess it?"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/userGuess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guessPrompt"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userGuess"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="guess"
+        android:onClick="checkGuess"/>
+
+</android.widget.RelativeLayout>
